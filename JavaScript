@@ -1,0 +1,13 @@
+const meals = ["fajitas", "mushroom risotto", "fresh tomato pasta", "veggie rice", "olives and hummus", "grilled halloumi salad", "Vodka"];
+
+function randomArrayElement(array) {
+  return  array[Math.floor(Math.random() * array.length)];
+}
+
+function chooseMeal() {
+  const meal = randomArrayElement(meals)
+  
+  document.querySelector('#meals').innerText = meal
+}
+
+
